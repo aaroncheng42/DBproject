@@ -1,0 +1,67 @@
+Biology:
+Anatomy
+AP Biology
+AP Environmental
+AP Psychology
+Bioorganic Chemistry
+Genetics
+Introduction to Neuroscience
+Living Environment
+Living Environment Lab
+Environmental Sustainability
+Staff List
+Biological Sciences Home Page
+Course Descriptions Home
+
+Math:
+Common Core Algebra
+Common Core Geometry
+Common Core Algebra II
+Pre-Calculus
+Calculus (non-AP)
+AP Calculus (AB)
+AP Calculus (BC)
+AP Statistics
+Multivariable Calculus
+Math Research
+Linear Algebra
+
+ELA:
+9th Grade English
+10th Grade English
+10th Grade: AP Capstone Seminar
+11th Grade English
+11th Grade: AP English Language & Composition
+12th Grade: AP Capstone Research
+12th Grade: AP English Literature & Composition
+12th Grade: Drama
+12th Grade: Creative Writing
+12th Grade: Film & Literature
+12th Grade: Graphic Novels
+12th Grade: Journalism
+12th Grade: Life, Love & Death
+12th Grade: Mystery, Horror & the Supernatural
+12th Grade: Science Fiction & Fantasy
+12th Grade: Yearbook
+Elective: The Survey (Tech's Student Newspaper)
+
+Chemistry:
+Regents Chemistry
+AP Chemistry
+Chemical Engineering
+Organic Chemistry
+MICA
+Quantitative Analysis
+Forensics
+
+CS:
+
+AP Computer Science Principles (10th Grade)
+AP Computer Science A
+Big Data: Warehousing & Analytics
+Computer Science & Engineering Home
+Cyber Security
+Digital Electronics (Project Lead the Way)
+Digital Systems Design
+Electrical Engineering Major
+Fundamentals of IT Infrastructure
