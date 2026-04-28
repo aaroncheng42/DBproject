@@ -1,0 +1,24 @@
+public class Offer {
+    private int period;
+    private int offeringID = 0;
+    private int departmentID;
+    private int assignmentID;
+    private int teacherID;
+    static int counter = 1;
+    // add roster and courses later
+
+    public Offer(int period, Departments department, Assignments assignments, Teachers teacher) {
+        this.period = period;
+        departmentID = department.getDepartmentID();
+        assignmentID = assignments.getAssignmentID();
+        teacherID = teacher.getTeacherID();
+        offeringID = counter;
+        counter++;
+        // add roster and courses later
+        }
+
+    public int getOfferingID() {
+        return offeringID;
+    }
+}
+
