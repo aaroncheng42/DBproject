@@ -4,7 +4,7 @@ public class Room{
     private static int counter = 0;
     public Room(String x){
         this.roomName = x;
-        this.RoomID = Room.counter;
-        Room.counter++;
+        this.RoomID = counter;
+        counter++;
     }
 }
