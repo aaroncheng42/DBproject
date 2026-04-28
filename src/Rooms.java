@@ -1,7 +1,10 @@
+import java.util.ArrayList;
+
 public class Rooms{
-    public static String Room_Creation(){
-        System.out.println("Current folder: " + System.getProperty("user.dir"));
-        String roomList = "";
+
+    private ArrayList<String> roomNumbers = new ArrayList<>();
+
+    public Rooms(){
         String room = "";
         String floor = "";
         String direction = "N";
@@ -22,10 +25,18 @@ public class Rooms{
                 for (int j = 1; j < 21; j++) {
                     room = String.valueOf(j);
                     // ts for testing System.out.print("" + floor + direction + room + ",");
-                    roomList += floor + direction + room + ",";
+                    roomNumbers.add(floor + direction + room);
                 }
             }
         }
-        return roomList;
     }
+    @Override
+    public String toString() {
+        String roomInserts = "";
+        for(String s : roomNumbers){
+            roomInserts += "INSERT INTO Rooms (RoomName) VALUES " + "(\""+s+"\")" + ";\n";
+        }
+        return roomInserts;
+    }
+
 }

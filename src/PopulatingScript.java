@@ -8,8 +8,8 @@ public class PopulatingScript {
     public PopulatingScript() {
     }
     public void start(){
-        String roomList = Rooms.Room_Creation();
-        System.out.println(roomList);
+        Rooms r = new Rooms();
+        System.out.println(r);
         HashMap<String, Boolean> assignmentMap = Assignment.Assignment_Creation();
         for (Map.Entry<String, Boolean> entry : assignmentMap.entrySet()) {
             System.out.println(entry.getKey() + " -> " + entry.getValue());
