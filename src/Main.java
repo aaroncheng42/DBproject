@@ -5,7 +5,6 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
         PopulatingScript dj = new PopulatingScript();
-        dj.Room_Creation();
-        dj.Assignment_Creation();
+        dj.start();
         }
     }
