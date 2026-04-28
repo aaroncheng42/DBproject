@@ -1,0 +1,9 @@
+public class TeacherSchedule {
+    private int offeringID;
+    private int teacherID;
+
+    public TeacherSchedule (Teachers teacher, Offer offer) {
+        offeringID = offer.getOfferingID();
+        teacherID = teacher.getTeacherID();
+    }
+}
