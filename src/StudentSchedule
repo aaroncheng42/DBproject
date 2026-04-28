@@ -1,0 +1,11 @@
+public class StudentSchedule {
+        private int offeringID;
+        private int studentID;
+
+        public StudentSchedule (Students student, Offer offer) {
+            offeringID = offer.getOfferingID();
+            studentID = student.getStudentID();
+        }
+    }
+
+
