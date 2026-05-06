@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Assignment{
-    public static HashMap<String, Boolean> Assignment_Creation() {
+    public static HashMap<String, Boolean> assignmentCreation() {
         HashMap<String, Boolean> hashMap = new HashMap<>();
         hashMap.put("Learning Addition", false);
         hashMap.put("Learning Subtraction", false);

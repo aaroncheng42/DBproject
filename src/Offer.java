@@ -1,23 +1,21 @@
 public class Offer {
     private int period;
     private int offeringID = 0;
-    private Departments departments;
-    private int departmentID;
     private Assignments assignments;
     private int assignmentID;
     private Teachers teacher;
     private int teacherID;
     static int counter = 1;
+    private int rosterID;
     // add roster and courses later
-
-    public Offer(int period, Departments department, Assignments assignments, Teachers teacher) {
+    // department needed?
+    public Offer(int period, Assignments assignments, Teachers teacher, Roster roster) {
         this.period = period;
-        departments = department;
-        departmentID = department.getDepartmentID();
         this.assignments = assignments;
         assignmentID = assignments.getAssignmentID();
         teacherID = teacher.getTeacherID();
         this.teacher = teacher;
+        rosterID = roster.getRosterID();
         offeringID = counter;
         counter++;
         // add roster and courses later
