@@ -13,7 +13,7 @@ public class PopulatingScript {
         HashMap<String, Boolean> assignmentMap = Assignment.Assignment_Creation();
         for (Map.Entry<String, Boolean> entry : assignmentMap.entrySet()) {
             System.out.println(entry.getKey() + " -> " + entry.getValue());
-            // someone who knows how to insert ts (this) into a file (Assignments) should do it
+            // someone who knows how to insert ts (this shit) into a file (Assignments) should do it
         }
     }
     

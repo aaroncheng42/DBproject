@@ -1,0 +1,151 @@
+3D Organ System Model
+Medical Case Study Diagnostic Report
+Enzyme Activity Experimental Design
+Evolutionary Mechanisms Comparative Essay
+Local Biodiversity Survey
+Environmental Policy Brief
+Observational Behavior Study
+Psychological Perspectives Research Paper
+Biochemical Reaction Mechanism Model
+Biomolecule Structure–Function Poster
+Multi‑Trait Inheritance Problem Set
+Genetic Disorder Infographic
+Brain Region Function Diagram
+Neurological Disease Analysis Paper
+Model Ecosystem Project
+Homeostasis Explanatory Essay
+Microscopy Cell Identification Lab
+Diffusion and Osmosis Lab Report
+School Sustainability Audit
+Product Lifecycle Analysis
+Linear Modeling Application
+Systems of Equations Scenario
+Geometric Theorem Proof
+Floor Plan Construction Project
+Quadratic Function Analysis
+Real‑World Regression Study
+Trigonometric Modeling Project
+Rational Function Investigation
+Derivative‑Based Function Analysis
+Applied Optimization Problems
+Limits and Integrals FRQ Set
+Fundamental Theorem of Calculus Explanation
+Infinite Series Convergence Analysis
+Parametric Motion Modeling
+Survey Data Statistical Report
+Hypothesis Testing Interpretation
+Contour Map and 3D Plot Portfolio
+Line and Surface Integral Solutions
+Mathematical Research Proposal
+Mathematical Literature Review
+Matrix Transformation Visualization
+Eigenvalue and Eigenvector Application
+Literary Theme Analysis Essay
+Character Diary Project
+Comparative Theme Essay
+Persuasive Speech
+Individual Research Report
+Team Multimedia Presentation Outline
+Rhetorical Analysis Essay
+American Culture Research Project
+AP‑Style Rhetorical Analysis
+Synthesis Essay
+Research Methodology Draft
+Annotated Bibliography
+Poem Close‑Reading Essay
+Prose Analysis FRQ
+Monologue Performance Reflection
+One‑Act Play
+Short Story with Narrative Technique
+Poetry Portfolio
+Film Adaptation Comparison
+Cinematography Scene Analysis
+Original Comic Pages
+Visual Rhetoric Essay
+News Article (AP Style)
+Feature Interview Story
+Mortality Theme Comparative Essay
+Personal Narrative
+Suspense Short Story
+Tension‑Building Analysis
+World‑Building Portfolio
+Sci‑Fi/Fantasy Social Commentary Essay
+Yearbook Spread Design
+Student Profile Interviews
+Article Pitch Packet
+Editorial on School Issue
+Stoichiometry Lab
+Periodic Trends Infographic
+Kinetics or Equilibrium Lab Report
+Thermodynamics FRQ Set
+Chemical Process Flow Diagram
+Heat Transfer Modeling
+Organic Reaction Mechanism Set
+IR/NMR Spectral Identification
+Material Properties Analysis
+Mechanical/Chemical Properties Lab
+Titration Concentration Report
+Accuracy vs. Precision Analysis
+Mock Crime Scene Evidence Analysis
+Forensic Toxicology Case Summary
+Data Visualization Project
+Algorithm‑Based App
+ETL Pipeline Build
+Dataset Dashboard Analysis
+Vulnerability Assessment
+Cyber‑Attack and Defense Report
+Combinational Logic Circuit Design
+Sequential Circuit Build
+Verilog/VHDL Module and Testing
+Finite State Machine Design
+AC/DC Circuit Analysis
+Signal Processing Application Report
+Network Architecture Diagram
+Virtualization Technology Comparison
+Cellular Respiration Concept Map
+Photosynthesis Modeling Activity
+Protein Synthesis Simulation
+Evolution Evidence Portfolio
+Ecological Succession Field Report
+Climate Change Data Analysis
+Human Body Systems Infographic
+Sensory Perception Lab
+Neurotransmitter Function Brief
+DNA Technology Ethics Debate
+Mendelian vs. Non‑Mendelian Comparison
+Gene Expression Case Study
+Microorganism Culture Lab
+Immune System Response Diagram
+Population Growth Modeling
+Renewable Energy Proposal
+Water Quality Assessment
+Soil Composition Investigation
+Food Web Construction Project
+Biome Comparative Study
+Algebraic Modeling Challenge
+Exponential Growth Application
+Geometry in Architecture Project
+Triangle Congruence Investigation
+Polynomial Function Exploration
+Logarithmic Function Application
+Trigonometric Identities Proof Set
+Limits and Continuity Concept Map
+Riemann Sum Approximation Task
+Differential Equation Modeling
+Statistical Sampling Simulation
+Probability Distribution Analysis
+Multivariable Optimization Task
+Vector Field Visualization
+Mathematical Proof Writing Exercise
+Number Theory Exploration
+Matrix Applications in Cryptography
+Literary Symbolism Analysis
+Narrative Point‑of‑View Rewrite
+Poetry Tone and Mood Study
+Dramatic Scene Rewrite
+Film Genre Analysis
+Graphic Novel Character Study
+Investigative Journalism Report
+Editorial Cartoon Analysis
+Chemical Bonding Modeling Activity
+Write for-loops and iteration statements
