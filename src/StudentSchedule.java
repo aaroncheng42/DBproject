@@ -1,15 +1,16 @@
 public class StudentSchedule {
-    private Offer offer;
-    private int offeringID;
+    private Offer[] offer;
+    private int[] offeringID;
     private int studentID;
     private Students students;
 
-    public StudentSchedule (Students student, Offer offer) {
-        offeringID = offer.getOfferingID();
-        this.offer = offer;
-        students = student;
-        offeringID = offer.getOfferingID();studentID = student.getStudentID();
+    public StudentSchedule (Students students, Offer[] offer) {
+        for (int offerIndex = 0; offerIndex < offer.length; offerIndex++) {
+            offeringID[offerIndex] = offer[offerIndex].getOfferingID();
+        }
+        this.students = students;
+        studentID = students.getStudentID();
     }
 }
-
+// in bash, we will this and teacherschedule with sets but how can we use
 
