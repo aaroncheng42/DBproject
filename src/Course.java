@@ -14,7 +14,7 @@ public class Course {
 
     @Override
     public String toString() {
-        return "INSERT INTO Courses (courseName, type) VALUES ('" + getCourseName() + "', " + getCourseType() + "');";
+        return "INSERT INTO Courses (courseName, type) VALUES ('" + getCourseName() + "', '" + getCourseType() + "');";
     }
 
     public static ArrayList<Course> getCourses() {
