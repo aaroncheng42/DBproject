@@ -119,11 +119,12 @@ public class Course {
         return courseName;
     }
 
+    public int getCourseID() {
+        return courseID;
+    }
+
     public String getCourseType() {
         return courseType;
     }
 
-    public int getCourseID() {
-        return courseID;
-    }
 }
