@@ -12,5 +12,3 @@ public class StudentSchedule {
         studentID = students.getStudentID();
     }
 }
-// in bash, we will this and teacherschedule with sets but how can we use
-
