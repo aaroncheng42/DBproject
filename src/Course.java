@@ -122,4 +122,8 @@ public class Course {
     public String getCourseType() {
         return courseType;
     }
+
+    public int getCourseID() {
+        return courseID;
+    }
 }

@@ -17,5 +17,3 @@ public class StudentSchedule {
         return offeringID;
     }
 }
-// in bash, we will this and teacherschedule with sets but how can we use
-
