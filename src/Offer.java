@@ -7,9 +7,10 @@ public class Offer {
     private int teacherID;
     static int counter = 1;
     private int rosterID;
-    // add roster and courses later
-    // department needed?
-    public Offer(int period, Assignments assignments, Teachers teacher, Roster roster) {
+    private Course course;
+    private int courseID;
+
+    public Offer(int period, Assignments assignments, Course course, Teachers teacher, Roster roster) {
         this.period = period;
         this.assignments = assignments;
         assignmentID = assignments.getAssignmentID();
@@ -18,8 +19,9 @@ public class Offer {
         rosterID = roster.getRosterID();
         offeringID = counter;
         counter++;
-        // add roster and courses later
-        }
+        courseID = course.getCourseID();
+        this.course = course;
+    }
 
     public int getOfferingID() {
         return offeringID;
