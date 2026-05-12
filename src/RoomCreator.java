@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
-public class RoomCreator{
-
+public class RoomCreator {
     private ArrayList<String> roomNumbers = new ArrayList<>();
-    private ArrayList<Room> li = new ArrayList<>();
-    public RoomCreator(){
+    private ArrayList<Room> roomArr = new ArrayList<>();
+
+    public RoomCreator() {
         String room = "";
         String floor = "";
         String direction = "N";
@@ -30,9 +30,10 @@ public class RoomCreator{
             }
         }
         for(String i : roomNumbers){
-            li.add(new Room(i));
+            roomArr.add(new Room(i));
         }
     }
+
     @Override
     public String toString() {
         String roomInserts = "";
@@ -41,8 +42,8 @@ public class RoomCreator{
         }
         return roomInserts;
     }
-    public ArrayList<Room> getRoomRefs() {
-        return li;
-    }
 
+    public ArrayList<Room> getRoomRefs() {
+        return roomArr;
+    }
 }
