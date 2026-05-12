@@ -10,11 +10,8 @@ public class PopulatingScript {
     public void start(){
         RoomCreator r = new RoomCreator();
         System.out.println(r);
-        HashMap<String, Boolean> assignmentMap = Assignment.assignmentCreation();
-        for (Map.Entry<String, Boolean> entry : assignmentMap.entrySet()) {
-            System.out.println(entry.getKey() + " -> " + entry.getValue());
-            // someone who knows how to insert ts (this shit) into a file (Assignments) should do it
-        }
+        DepartmentCreator d = new DepartmentCreator();
+        System.out.println(d);
     }
     
 }

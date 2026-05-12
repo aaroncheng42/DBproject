@@ -38,7 +38,7 @@ public class RoomCreator {
     public String toString() {
         String roomInserts = "";
         for(String s : roomNumbers){
-            roomInserts += "INSERT INTO Rooms (RoomName) VALUES " + "(\""+s+"\")" + ";\n";
+            roomInserts += "INSERT INTO Rooms (RoomName) VALUES " + "(\'"+s+"\'')" + ";\n";
         }
         return roomInserts;
     }
