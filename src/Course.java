@@ -14,11 +14,7 @@ public class Course {
 
     @Override
     public String toString() {
-<<<<<<< HEAD
         return "INSERT INTO Courses (courseName, type) VALUES (" + getCourseName() + ", " + getCourseType() + ");";
-=======
-        return "INSERT INTO Courses (courseName, type) VALUES ('" + getCourseName() + "', '" + getCourseType() + "');";
->>>>>>> d6f8e6971353592b8601a1df30c97c2da7a06c03
     }
 
     public static ArrayList<Course> getCourses() {
@@ -123,7 +119,6 @@ public class Course {
         return courseName;
     }
 
-<<<<<<< HEAD
     public int getCourseID() {
         return courseID;
     }
@@ -131,13 +126,5 @@ public class Course {
     public String getCourseType() {
         return courseType;
     }
-=======
-    public String getCourseType() {
-        return courseType;
-    }
 
-    public int getCourseID() {
-        return courseID;
-    }
->>>>>>> d6f8e6971353592b8601a1df30c97c2da7a06c03
 }
