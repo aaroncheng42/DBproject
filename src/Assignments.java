@@ -10,7 +10,21 @@ public class Assignments {
         counter++;
     }
 
+    public String getAssignmentName() {
+        return assignmentName;
+    }
+
+    public boolean getIsMajor() {
+        return isMajor;
+    }
     public int getAssignmentID() {
         return assignmentID;
     }
+
+    @Override
+    public String toString() {
+        return "INSERT INTO Courses (courseName, type) VALUES (" + getAssignmentName() + ", " + getIsMajor() + ");";
+    }
+
+
 }
