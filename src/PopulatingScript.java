@@ -12,6 +12,7 @@ public class PopulatingScript {
         System.out.println(r);
         DepartmentCreator d = new DepartmentCreator();
         System.out.println(d);
+        PopulateCourses.print_courses();
     }
     
 }
