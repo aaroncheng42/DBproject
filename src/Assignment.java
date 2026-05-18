@@ -1,42 +1,53 @@
-import java.io.IOException;
-import java.nio.file.*;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
 
-public class Assignment{
-    public static HashMap<String, Boolean> assignmentCreation() {
-        HashMap<String, Boolean> hashMap = new HashMap<>();
-        hashMap.put("Learning Addition", false);
-        hashMap.put("Learning Subtraction", false);
-        hashMap.put("Learning Multiplication", false);
-        hashMap.put("Learning Cooking", false);
-        hashMap.put("Learning Times Tables", false);
-        hashMap.put("Learning Square Roots", false);
-        hashMap.put("Learning Exponents", false);
-        hashMap.put("Learning Division", false);
-        hashMap.put("MP1 Math Test", true);
-        hashMap.put("Learning Reflections", false);
-        hashMap.put("Learning About Mirrors", false);
-        hashMap.put("Learning About Waves", false);
-        hashMap.put("Learning About Parabolas", false);
-        hashMap.put("Learning Graphing", false);
-        hashMap.put("Learning Cube Roots", false);
-        hashMap.put("Learning Square Times Tables", false);
-        hashMap.put("Learning Buisness", false);
-        hashMap.put("Learning Supply and Demand", false);
-        hashMap.put("Learning How to Make Money", false);
-        hashMap.put("MP1 Buisness Test", true);
-        hashMap.put("Learning Scratch", false);
-        hashMap.put("Learning Java", false);
-        hashMap.put("Learning Iterations", false);
-        hashMap.put("Learning About If Statements", false);
-        hashMap.put("Learning Hashmaps", false);
-        hashMap.put("Learning For Statements", false);
-        hashMap.put("Learning Arrays", false);
-        hashMap.put("Learning 2D Arrays", false);
-        hashMap.put("Learning Recursion", false);
-        hashMap.put("Learning Strings", false);
-        hashMap.put("MP1 CSP Test", true);
-        return hashMap;
+public class Assignment {
+    private String assignmentName;
+    private boolean isMajor;
+
+    public Assignment(String name, boolean major) {
+        assignmentName = name;
+        isMajor = major;
+    }
+
+    @Override
+    public String toString() {
+        return "INSERT INTO Assignments (assignmentName, isMajor) VALUES ('" + getAssignmentName() + "', " + getAssignmentType() + ");";
+    }
+
+    public static ArrayList<Assignment> getAssignments() {
+        ArrayList<Assignment> assignments = new ArrayList<>();
+        assignments.add(new Assignment("Learning Addition", false));
+        assignments.add(new Assignment("Learning Subtraction", false));
+        assignments.add(new Assignment("Learning Multiplication", false));
+        assignments.add(new Assignment("Learning Cooking", false));
+        assignments.add(new Assignment("Learning Exponents", false));
+        assignments.add(new Assignment("Learning Square Roots", false));
+        assignments.add(new Assignment("Learning Division", false));
+        assignments.add(new Assignment("MP1 Math Test", true));
+        assignments.add(new Assignment("Learning About Parabolas", false));
+        assignments.add(new Assignment("Learning Graphing", false));
+        assignments.add(new Assignment("Learning Business", false));
+        assignments.add(new Assignment("MP1 Business Test", true));
+        assignments.add(new Assignment("Learning Scratch", false));
+        assignments.add(new Assignment("Learning Java", false));
+        assignments.add(new Assignment("Learning Selection & Iteration", false));
+        assignments.add(new Assignment("Learning Conditionals", false));
+        assignments.add(new Assignment("Learning Recursion", false));
+        assignments.add(new Assignment("Learning Lists", false));
+        assignments.add(new Assignment("MP1 Coding Test", true));
+        assignments.add(new Assignment());
+        assignments.add(new Assignment());
+        assignments.add(new Assignment());
+        assignments.add(new Assignment());
+        assignments.add(new Assignment());
+        return assignments;
+    }
+
+    public String getAssignmentName() {
+        return assignmentName;
+    }
+
+    public boolean getAssignmentType() {
+        return isMajor;
     }
 }
