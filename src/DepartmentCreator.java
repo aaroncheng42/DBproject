@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
-public class DepartmentCreator{
+public class DepartmentCreator {
     public static final String[] DEPARTMENTS = {"Biology", "Math", "ELA", "Chemistry", "CS"};
-    private ArrayList<Departments> refrencesList = new ArrayList<>();
+    private ArrayList<Departments> referencesList = new ArrayList<>();
     public DepartmentCreator(){
         for(String s : DEPARTMENTS){
-            refrencesList.add(new Departments(s));
+            referencesList.add(new Departments(s));
         }
     }
     @Override
