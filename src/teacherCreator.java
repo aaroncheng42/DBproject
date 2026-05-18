@@ -13,6 +13,7 @@ public class teacherCreator{
         while(sc.hasNext()){
             teacherRefs.add(new Teachers(sc.nextLine(), d.getRefrencesList().get((int)(Math.random()*d.getRefrencesList().size())).getDepartmentID()));
         }
+        sc.close();
     }
     public ArrayList<Teachers> getTeacherRefs() {
         return teacherRefs;

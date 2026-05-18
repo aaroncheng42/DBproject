@@ -9,7 +9,7 @@ public class DepartmentCreator {
         }
     }
     public ArrayList<Departments> getRefrencesList() {
-        return refrencesList;
+        return referencesList;
     }
     @Override
     public String toString() {
