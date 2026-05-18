@@ -19,13 +19,13 @@ public class Assignment {
         assignments.add(new Assignment("Learning Addition", false));
         assignments.add(new Assignment("Learning Subtraction", false));
         assignments.add(new Assignment("Learning Multiplication", false));
-        assignments.add(new Assignment("Learning Cooking", false));
+        assignments.add(new Assignment("Learning Division", false));
         assignments.add(new Assignment("Learning Exponents", false));
         assignments.add(new Assignment("Learning Square Roots", false));
-        assignments.add(new Assignment("Learning Division", false));
-        assignments.add(new Assignment("MP1 Math Test", true));
-        assignments.add(new Assignment("Learning About Parabolas", false));
+        assignments.add(new Assignment("Learning PEMDAS", false));
         assignments.add(new Assignment("Learning Graphing", false));
+        assignments.add(new Assignment("Learning About Parabolas", false));
+        assignments.add(new Assignment("MP1 Math Test", true));
         assignments.add(new Assignment("Learning Business", false));
         assignments.add(new Assignment("MP1 Business Test", true));
         assignments.add(new Assignment("Learning Scratch", false));
