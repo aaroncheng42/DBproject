@@ -1,24 +1,23 @@
 public class Offer {
     private int period;
     private int offeringID = 0;
-    private Assignments assignments;
+    private Assignment assignments;
     private int assignmentID;
     private Teachers teacher;
     private int teacherID;
-    static int counter = 1;
+    private static int counter = 0;
     private int rosterID;
     private Course course;
     private int courseID;
 
-    public Offer(int period, Assignments assignments, Course course, Teachers teacher, Roster roster) {
+    public Offer(int period, Assignment assignments, int assignmentID, Course course, Teachers teacher, Roster roster) {
         this.period = period;
         this.assignments = assignments;
-        assignmentID = assignments.getAssignmentID();
+        this.assignmentID = assignmentID;
         teacherID = teacher.getTeacherID();
         this.teacher = teacher;
         rosterID = roster.getRosterID();
-        offeringID = counter;
-        counter++;
+        offeringID = ++counter;
         courseID = course.getCourseID();
         this.course = course;
     }
