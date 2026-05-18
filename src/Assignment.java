@@ -5,10 +5,13 @@ import java.util.Scanner;
 public class Assignment {
     private String assignmentName;
     private boolean isMajor;
+    private int assignmentID;
+    private static int counter = 0;
 
     public Assignment(String name, boolean major) {
         assignmentName = name;
         isMajor = major;
+        assignmentID = ++counter;
     }
 
     @Override
@@ -37,5 +40,9 @@ public class Assignment {
 
     public boolean getAssignmentType() {
         return isMajor;
+    }
+
+    public int getAssignmentID() {
+        return assignmentID;
     }
 }

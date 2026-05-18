@@ -13,7 +13,7 @@ public class Offer {
     public Offer(int period, Assignment assignments, int assignmentID, Course course, Teachers teacher, Roster roster) {
         this.period = period;
         this.assignments = assignments;
-        this.assignmentID = assignmentID;
+        this.assignmentID = assignments.getAssignmentID();
         teacherID = teacher.getTeacherID();
         this.teacher = teacher;
         rosterID = roster.getRosterID();
