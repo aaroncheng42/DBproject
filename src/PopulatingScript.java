@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.nio.file.*;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class PopulatingScript {
 
@@ -13,6 +14,12 @@ public class PopulatingScript {
         DepartmentCreator d = new DepartmentCreator();
         System.out.println(d);
         PopulateCourses.print_courses();
+        try {
+            teacherCreator t = new teacherCreator(d);
+            System.out.println(t);
+        } catch (Exception e) {
+        }
+
     }
     
 }
