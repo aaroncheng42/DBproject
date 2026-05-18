@@ -8,6 +8,9 @@ public class DepartmentCreator{
             refrencesList.add(new Departments(s));
         }
     }
+    public ArrayList<Departments> getRefrencesList() {
+        return refrencesList;
+    }
     @Override
     public String toString() {
         String total_concat = "";
