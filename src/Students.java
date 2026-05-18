@@ -2,6 +2,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.*;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.stream.Stream;
 import java.util.Scanner;
@@ -35,16 +36,19 @@ public class Students {
 //    (Stream<String> stream = Files.lines(Paths.get("names.txt")))
 
     public static class StudentPopulation2 {
-        public static void main(String[] args) {
+        public static <Student> void main(String[] args) {
             Path path = Paths.get("src/names.txt");
             try (Scanner readFile = new Scanner(path)) {
-                String line = readFile.nextLine();
                 List<String> lines = Files.readAllLines(Paths.get(path.toUri()));
                 Collections.sort(lines);
-                String result = String.join("\n", lines);
-                lines.forEach((System.out::println));
-                while (readFile.hasNext(line)) {
-                    System.out.println(line);
+                String currentLine = String.join("\n", lines);
+                List<Student> students = new ArrayList<>();
+                for (String Lines : lines) {
+                    Student s = new Student();
+                    students.add(s);
+                }
+                for (Student s : students) {
+                    System.out.println(s);
                 }
             } catch (IOException e) {
                 System.out.println("Can't find the file.");
