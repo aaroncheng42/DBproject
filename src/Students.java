@@ -1,12 +1,11 @@
 public class Students {
     private String studentName = "";
-    private int studentID = 0;
-    static int counter = 1;
+    private int studentID;
+    static int counter = 0;
 
     public Students(String name) {
         studentName = name;
-        studentID = counter;
-        counter++;
+        studentID = ++counter;
     }
 
     public int getStudentID() {

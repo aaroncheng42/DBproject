@@ -8,11 +8,14 @@ public class DepartmentCreator {
             referencesList.add(new Departments(s));
         }
     }
+    public ArrayList<Departments> getRefrencesList() {
+        return refrencesList;
+    }
     @Override
     public String toString() {
         String total_concat = "";
         for(String s : DEPARTMENTS){
-            total_concat += "INSERT INTO Rooms (departmentName) VALUES " + "(\'"+s+"\'')" + ";\n";
+            total_concat += "INSERT INTO Departments (departmentName) VALUES " + "(\'"+s+"\')" + ";\n";
         }
         return total_concat;
     }
