@@ -1,18 +1,19 @@
 public class Offering {
     private int period;
-    private int offeringID = 0;
+    private int offeringID;
     private Assignment[] assignments;
     private int[] assignmentID;
     private Teachers teacher;
     private int teacherID;
-    static int counter = 1;
+    private static int counter = 0;
     private int rosterID;
     private Course course;
     private int courseID;
 
 
-    public Offering(int period, Assignment[] assignments, Course course, Teachers teacher, Roster roster) {
-        this.period = period;
+    public Offering(Assignment[] assignments, Course course, Teachers teacher, Roster roster) {
+        this.period = (teacher.getAvaliablePeriods()).get((int)(Math.random()*teacher.getAvaliablePeriods().size()));
+        teacher.removePeriods(period);
         this.assignments = assignments;
         int count = 0;
         for (Assignment assignment : assignments) {
@@ -22,8 +23,7 @@ public class Offering {
         teacherID = teacher.getTeacherID();
         this.teacher = teacher;
         rosterID = roster.getRosterID();
-        offeringID = counter;
-        counter++;
+        offeringID = ++counter;
         courseID = course.getCourseID();
         this.course = course;
     }
@@ -32,6 +32,7 @@ public class Offering {
     public int getOfferingID() {
         return offeringID;
     }
+
 
 
     public int getPeriod() {
