@@ -2,8 +2,8 @@ public class TeacherSchedule {
     private int offeringID;
     private int teacherID;
 
-    public TeacherSchedule (Teachers teacher, Offer offer) {
-        offeringID = offer.getOfferingID();
+    public TeacherSchedule (Teachers teacher, Offering offering) {
+        offeringID = offering.getOfferingID();
         teacherID = teacher.getTeacherID();
     }
 }
