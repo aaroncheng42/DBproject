@@ -13,7 +13,11 @@ public class Room{
         roomID = ++counter;
     }
 
-    public ArrayList<Room> getRooms() throws FileNotFoundException {
+    public String toString() {
+        return "INSERT INTO Rooms (room) VALUES ('" + getRoomName() + "');";
+    }
+
+    public static ArrayList<Room> getRooms() throws FileNotFoundException {
         ArrayList<Room> rooms = new ArrayList<>();
         Scanner scanner = new Scanner(new File("rooms.txt"));
 
@@ -24,5 +28,9 @@ public class Room{
 
         scanner.close();
         return rooms;
+    }
+
+    public String getRoomName() {
+        return roomName;
     }
 }
