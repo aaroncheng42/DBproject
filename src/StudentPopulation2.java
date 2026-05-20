@@ -24,8 +24,9 @@ public class StudentPopulation2 {
             for (Student s : studentList) {
                 count++;
                 System.out.println(s);
+                System.out.println("StudentID = " + count);
             }
-            System.out.println(count);
+            System.out.println("\nTotal number of students: " + count);
         } catch (IOException e) {
             System.out.println("Can't find the file.");
         } catch (Exception e) {

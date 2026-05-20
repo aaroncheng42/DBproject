@@ -30,7 +30,7 @@ public class Students {
     //For the student population script, make a loop that calls the student constructor and for the studentName parameter you should get it from a file with all 5000 studentNames
     @Override
     public String toString() {
-        return "INSERT INTO Students (studentName) VALUES (\'" + getStudentName() + "\')";
+        return "INSERT INTO Students (studentName) VALUES (\'" + getStudentName() + "\') \n" + "( " + getStudentName() + " )";
 
     }
 //    (Stream<String> stream = Files.lines(Paths.get("names.txt")))
