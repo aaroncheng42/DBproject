@@ -32,6 +32,10 @@ public class StudentPopulation2 {
             System.out.println("Some weird error occurred. I can't handle ts");
         }
     }
+    public static void main(String[] args) {
+//        to test out the script to see if it works
+        studentsPopulatingScript();
+    }
 }
 
 
