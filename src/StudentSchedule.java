@@ -1,13 +1,13 @@
 public class StudentSchedule {
-    private Offer[] offer;
+    private Offering[] offering;
     private int[] offeringID;
     private int studentID;
     private Students students;
 
-    public StudentSchedule (Students students, Offer[] offer) {
-        offeringID = new int[offer.length];
-        for (int offerIndex = 0; offerIndex < offer.length; offerIndex++) {
-            offeringID[offerIndex] = offer[offerIndex].getOfferingID();
+    public StudentSchedule (Students students, Offering[] offering) {
+        offeringID = new int[offering.length];
+        for (int offerIndex = 0; offerIndex < offering.length; offerIndex++) {
+            offeringID[offerIndex] = offering[offerIndex].getOfferingID();
         }
         this.students = students;
         studentID = students.getStudentID();

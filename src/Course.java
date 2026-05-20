@@ -14,7 +14,7 @@ public class Course {
 
     @Override
     public String toString() {
-        return "INSERT INTO Courses (courseName, type) VALUES (" + getCourseName() + ", " + getCourseType() + ");";
+        return "INSERT INTO Courses (courseName, type) VALUES ('" + getCourseName() + "', '" + getCourseType() + "');";
     }
 
     public static ArrayList<Course> getCourses() {
@@ -25,7 +25,7 @@ public class Course {
         courses.add(new Course("AP Psychology", "AP"));
         courses.add(new Course("Genetics", "Elective"));
         courses.add(new Course("Introduction to Neuroscience", "Elective"));
-        courses.add(new Course("Living Environment", "Regents"));
+        courses.add(new Course("Biology", "Regents"));
         courses.add(new Course("Environmental Sustainability", "Elective"));
         courses.add(new Course("Chemistry", "Regents"));
         courses.add(new Course("AP Chemistry", "AP"));
