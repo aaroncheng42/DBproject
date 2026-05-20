@@ -10,7 +10,7 @@ import java.util.List;
 public class StudentPopulation2 {
     public static <Student> void studentsPopulatingScript() {
         int count = 0;
-        Path path = Paths.get("src/names.txt");
+        Path path = Paths.get("src/studentnames.txt");
         try {
             List<String> lines = Files.readAllLines(path);
 //            Collections.sort(lines);

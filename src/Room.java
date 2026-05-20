@@ -1,10 +1,28 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Room{
-    private int RoomID;
+    private int roomID;
     private String roomName = "";
     private static int counter = 1;
-    public Room(String x){
-        this.roomName = x;
-        this.RoomID = counter;
-        counter++;
+
+    public Room(String r){
+        roomName = r;
+        roomID = ++counter;
+    }
+
+    public ArrayList<Room> getRooms() throws FileNotFoundException {
+        ArrayList<Room> rooms = new ArrayList<>();
+        Scanner scanner = new Scanner(new File("rooms.txt"));
+
+        while (scanner.hasNextLine()) {
+            String roomName = scanner.nextLine();
+            rooms.add(new Room(roomName));
+        }
+
+        scanner.close();
+        return rooms;
     }
 }
