@@ -11,6 +11,7 @@ public class PopulatingScript {
         System.out.println(d);
         Course.print_courses();
         PopulatingAssignments.print_assignments();
+        StudentPopulation2.studentsPopulatingScript();
         try {
             teacherCreator t = new teacherCreator(d);
             System.out.println(t);
