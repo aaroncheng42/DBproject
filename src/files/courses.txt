@@ -1,0 +1,93 @@
+Anatomy,Elective
+AP Biology,AP
+AP Environmental Science,AP
+AP Psychology,AP
+Genetics,Elective
+Introduction to Neuroscience,Elective
+Biology,Regents
+Environmental Sustainability,Elective
+Chemistry,Regents
+AP Chemistry,AP
+Introduction to Chemical Engineering,Elective
+Organic Chemistry,Elective
+Modern Chemical Instrumental Analysis,Elective
+Quantitative Analysis,Elective
+Forensics,Elective
+AP Computer Science Principles,AP
+AP Computer Science A,AP
+Big Data: Warehousing & Analytics,Elective
+AP Cybersecurity,AP
+Cybersecurity,Elective
+Digital Electronics,Elective
+Fundamentals of IT Infrastructure,Elective
+Mobile App Development,Elective
+Statics,Elective
+Web Development,Elective
+English,Elective
+AP Capstone Seminar,AP
+AP English Language and Composition,AP
+AP Capstone Research,AP
+Physical Education,Elective
+Mandarin,Elective
+AP Chinese Language and Culture,AP
+French,Elective
+AP French Language and Culture,AP
+German,Elective
+AP German Language and Culture,AP
+Italian,Elective
+AP Italian Language and Culture,AP
+Spanish,Elective
+AP Spanish Language and Culture,AP
+AP Spanish Literature and Culture,AP
+Algebra,Regents
+Geometry,Regents
+Pre-Calculus,Elective
+Calculus,Elective
+AP Calculus AB,AP
+AP Calculus BC,AP
+AP Statistics,AP
+Multivariable Calculus,Elective
+Linear Algebra,Elective
+Physics,Regents
+AP Physics 1,AP
+AP Physics 2,AP
+AP Physics C Mechanics,AP
+AP Physics C Electricity/Magnetism,AP
+Astronomy and Astrophysics,Elective
+Modern Physics,Elective
+Cultural Anthropology,Elective
+Dollars and Sense,Elective
+Economics,Elective
+Anthropology,Elective
+Sociology,Elective
+AP World History,AP
+AP US History,AP
+AP Human Geography,AP
+AP US Government and Politics,AP
+AP Comparative Government,AP
+AP Macroeconomics,AP
+AP Microeconomics,AP
+Civil Engineering and Architecture,Elective
+Principles of Engineering,Elective
+Flight School,Elective
+Aerospace Engineering,Elective
+Computer Integrated Manufacturing,Elective
+Concrete, Steel, and Soil,Elective
+Land Surveying,Elective
+Accounting,Elective
+AP Business with Personal Finance,Elective
+Product Design,Elective
+Methods of Fabrication,Elective
+Adobe Visual Design,Elective
+Criminal Law,Elective
+Constitutional Law,Elective
+Civil Law,Elective
+Pharmacy Organic Chemistry and Seminar,Elective
+Math Research with Computer Programming,Elective
+Graph Theory,Elective
+Number Theory,Elective
+Robotics,Elective
+Mechatronics,Elective
+Adobe Digital Video,Elective
+Digital Animation,Elective
+AP Studio Art,AP
