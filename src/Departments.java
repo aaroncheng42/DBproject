@@ -12,4 +12,5 @@ public class Departments {
     public int getDepartmentID() {
         return departmentID;
     }
+
 }
