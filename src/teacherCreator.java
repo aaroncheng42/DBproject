@@ -8,7 +8,7 @@ public class teacherCreator{
     private ArrayList<Teachers> teacherRefs = new ArrayList<>();
 
     public teacherCreator(DepartmentCreator d) throws FileNotFoundException{
-        File f = new File("./Staff");
+        File f = new File("src/files/staff.txt");
         Scanner sc = new Scanner(f);
         while(sc.hasNext()){
             teacherRefs.add(new Teachers(sc.nextLine(), d.getRefrencesList().get((int)(Math.random()*d.getRefrencesList().size())).getDepartmentID()));

@@ -21,7 +21,7 @@ public class Assignment {
 
     public static ArrayList<Assignment> getAssignments() {
         ArrayList<Assignment> assignments = new ArrayList<>();
-        File f = new File("./Assignment.txt");
+        File f = new File("src/files/assignments.txt");
         try {
             Scanner sc = new Scanner(f);
             while (sc.hasNext()) {

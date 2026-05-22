@@ -33,6 +33,6 @@ public class Students {
         return "INSERT INTO Students (studentName) VALUES (\'" + getStudentName() + "\') \n" + "( " + getStudentName() + " )";
 
     }
-//    (Stream<String> stream = Files.lines(Paths.get("studentnames.txt")))
+//    (Stream<String> stream = Files.lines(Paths.get("src/files/studentnames.txt")))
 
 }

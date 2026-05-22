@@ -19,7 +19,7 @@ public class Room{
 
     public static ArrayList<Room> getRooms() throws FileNotFoundException {
         ArrayList<Room> rooms = new ArrayList<>();
-        Scanner scanner = new Scanner(new File("rooms.txt"));
+        Scanner scanner = new Scanner(new File("src/files/rooms.txt"));
 
         while (scanner.hasNextLine()) {
             String roomName = scanner.nextLine();

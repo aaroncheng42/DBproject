@@ -31,7 +31,7 @@ public class Course {
 
     public static ArrayList<Course> getCourses() throws FileNotFoundException {
         ArrayList<Course> courses = new ArrayList<>();
-        Scanner scanner = new Scanner(new File("courses.txt"));
+        Scanner scanner = new Scanner(new File("src/files/courses.txt"));
 
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
