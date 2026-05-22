@@ -5,8 +5,7 @@ public class PopulatingScript {
     public PopulatingScript() {
     }
     public void start() throws IOException {
-        RoomCreator r = new RoomCreator();
-        System.out.println(r);
+        Room.printRooms();
         DepartmentCreator d = new DepartmentCreator();
         System.out.println(d);
         Course.printCourses();

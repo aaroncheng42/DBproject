@@ -30,6 +30,14 @@ public class Room{
         return rooms;
     }
 
+    public static void printRooms() throws FileNotFoundException {
+        ArrayList<Room> rooms = Room.getRooms();
+
+        for (int i = 0; i < rooms.size(); i++) {
+            System.out.println(rooms.get(i).toString());
+        }
+    }
+
     public String getRoomName() {
         return roomName;
     }
