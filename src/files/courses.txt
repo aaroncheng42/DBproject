@@ -91,3 +91,6 @@ Mechatronics,Elective
 Adobe Digital Video,Elective
 Digital Animation,Elective
 AP Studio Art,AP
+Film and Literature,Elective
+Drama,Elective
+Journalism,Elective
