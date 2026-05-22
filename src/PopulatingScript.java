@@ -9,7 +9,7 @@ public class PopulatingScript {
         System.out.println(r);
         DepartmentCreator d = new DepartmentCreator();
         System.out.println(d);
-        Course.print_courses();
+        Course.printCourses();
         PopulatingAssignments.print_assignments();
         try {
             teacherCreator t = new teacherCreator(d);

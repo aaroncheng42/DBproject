@@ -21,7 +21,7 @@ public class Course {
         return "INSERT INTO Courses (courseName, type) VALUES ('" + getCourseName() + "', '" + getCourseType() + "');";
     }
 
-    public static void print_courses() throws FileNotFoundException {
+    public static void printCourses() throws FileNotFoundException {
         ArrayList<Course> courses = Course.getCourses();
 
         for (int i = 0; i < courses.size(); i++) {
