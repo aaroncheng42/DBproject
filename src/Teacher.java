@@ -26,7 +26,7 @@ public class Teacher {
 
     public static ArrayList<Teacher> getTeachers() throws FileNotFoundException {
         ArrayList<Teacher> teachers = new ArrayList<>();
-        Scanner scanner = new Scanner(new File("src/files/rooms.txt"));
+        Scanner scanner = new Scanner(new File("src/files/staff.txt"));
 
         while (scanner.hasNextLine()) {
             String name = scanner.nextLine();
