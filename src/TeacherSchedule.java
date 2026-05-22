@@ -2,9 +2,9 @@ public class TeacherSchedule {
     private int[] offeringID;
     private Offering[] offering;
     private int teacherID;
-    private Teachers teachers;
+    private Teacher teachers;
 
-    public TeacherSchedule (Teachers teacher, Offering[] offering) {
+    public TeacherSchedule (Teacher teacher, Offering[] offering) {
         offeringID = new int[offering.length];
         for (int offerIndex = 0; offerIndex < offering.length; offerIndex++) {
             offeringID[offerIndex] = offering[offerIndex].getOfferingID();
