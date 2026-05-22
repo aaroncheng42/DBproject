@@ -34,6 +34,14 @@ public class Assignment {
         }
     }
 
+    public static void printAssignments() {
+        ArrayList<Assignment> assignments = Assignment.getAssignments();
+
+        for (int i = 0; i < assignments.size(); i++) {
+            System.out.println(assignments.get(i).toString());
+        }
+    }
+
     public String getAssignmentName() {
         return assignmentName;
     }

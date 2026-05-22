@@ -8,7 +8,7 @@ public class PopulatingScript {
         Room.printRooms();
         Department.printDepartments();
         Course.printCourses();
-        PopulatingAssignments.print_assignments();
+        Assignment.printAssignments();
         Teacher.printTeachers();
     }
 }
