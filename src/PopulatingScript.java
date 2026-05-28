@@ -10,5 +10,6 @@ public class PopulatingScript {
         Course.printCourses();
         Assignment.printAssignments();
         Teacher.printTeachers();
+        StudentPopulation2.studentsPopulatingScript();
     }
 }
