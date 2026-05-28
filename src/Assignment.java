@@ -21,7 +21,7 @@ public class Assignment {
 
     public static ArrayList<Assignment> getAssignments() {
         ArrayList<Assignment> assignments = new ArrayList<>();
-        File f = new File("./Assignment.txt");
+        File f = new File("src/files/assignments.txt");
         try {
             Scanner sc = new Scanner(f);
             while (sc.hasNext()) {
@@ -31,6 +31,14 @@ public class Assignment {
             return assignments;
         } catch (Exception e) {
             return new ArrayList<Assignment>();
+        }
+    }
+
+    public static void printAssignments() {
+        ArrayList<Assignment> assignments = Assignment.getAssignments();
+
+        for (int i = 0; i < assignments.size(); i++) {
+            System.out.println(assignments.get(i).toString());
         }
     }
 

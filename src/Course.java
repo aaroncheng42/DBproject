@@ -21,7 +21,7 @@ public class Course {
         return "INSERT INTO Courses (courseName, type) VALUES ('" + getCourseName() + "', '" + getCourseType() + "');";
     }
 
-    public static void print_courses() throws FileNotFoundException {
+    public static void printCourses() throws FileNotFoundException {
         ArrayList<Course> courses = Course.getCourses();
 
         for (int i = 0; i < courses.size(); i++) {
@@ -31,7 +31,7 @@ public class Course {
 
     public static ArrayList<Course> getCourses() throws FileNotFoundException {
         ArrayList<Course> courses = new ArrayList<>();
-        Scanner scanner = new Scanner(new File("courses.txt"));
+        Scanner scanner = new Scanner(new File("src/files/courses.txt"));
 
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();

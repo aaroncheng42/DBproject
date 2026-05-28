@@ -5,19 +5,10 @@ public class PopulatingScript {
     public PopulatingScript() {
     }
     public void start() throws IOException {
-        RoomCreator r = new RoomCreator();
-        System.out.println(r);
-        DepartmentCreator d = new DepartmentCreator();
-        System.out.println(d);
-        Course.print_courses();
-        PopulatingAssignments.print_assignments();
-        StudentPopulation2.studentsPopulatingScript();
-        try {
-            teacherCreator t = new teacherCreator(d);
-            System.out.println(t);
-        } catch (Exception e) {
-        }
-
+        Room.printRooms();
+        Department.printDepartments();
+        Course.printCourses();
+        Assignment.printAssignments();
+        Teacher.printTeachers();
     }
-    
 }

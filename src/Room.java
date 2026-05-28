@@ -19,7 +19,7 @@ public class Room{
 
     public static ArrayList<Room> getRooms() throws FileNotFoundException {
         ArrayList<Room> rooms = new ArrayList<>();
-        Scanner scanner = new Scanner(new File("rooms.txt"));
+        Scanner scanner = new Scanner(new File("src/files/rooms.txt"));
 
         while (scanner.hasNextLine()) {
             String roomName = scanner.nextLine();
@@ -28,6 +28,14 @@ public class Room{
 
         scanner.close();
         return rooms;
+    }
+
+    public static void printRooms() throws FileNotFoundException {
+        ArrayList<Room> rooms = Room.getRooms();
+
+        for (int i = 0; i < rooms.size(); i++) {
+            System.out.println(rooms.get(i).toString());
+        }
     }
 
     public String getRoomName() {

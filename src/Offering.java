@@ -3,7 +3,7 @@ public class Offering {
     private int offeringID = 0;
     private Assignment[] assignments;
     private int[] assignmentID;
-    private Teachers teacher;
+    private Teacher teacher;
     private int teacherID;
     static int counter = 1;
     private int rosterID;
@@ -11,7 +11,7 @@ public class Offering {
     private int courseID;
 
 
-    public Offering(int period, Assignment[] assignments, Course course, Teachers teacher, Roster roster) {
+    public Offering(int period, Assignment[] assignments, Course course, Teacher teacher, Roster roster) {
         this.period = period;
         this.assignments = assignments;
         int count = 0;
