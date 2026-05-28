@@ -9,6 +9,7 @@ public class Teacher {
     private static int counter = 0;
     private int departmentID;
     private ArrayList<Integer> avaliablePeriods = new ArrayList<>();
+    private ArrayList<Offering> teachersOfferings = new ArrayList<>();
 
     public Teacher(String name) throws FileNotFoundException {
         teacherName = name;
@@ -60,7 +61,16 @@ public class Teacher {
     public void removePeriods(int x){
         avaliablePeriods.remove(avaliablePeriods.indexOf(x));
     }
+
     public ArrayList<Integer> getAvaliablePeriods() {
         return avaliablePeriods;
+    }
+
+    public void addOffering (Offering offering) {
+        teachersOfferings.add(offering);
+    }
+
+    public ArrayList<Offering> getTeachersOfferings() {
+        return teachersOfferings;
     }
 }
