@@ -9,6 +9,7 @@ public class Teacher {
     private static int counter = 0;
     private int departmentID;
     private ArrayList<Integer> avaliablePeriods = new ArrayList<>();
+    private ArrayList<Offering> teachersOfferings = new ArrayList<>();
 
     public Teacher(String name) throws FileNotFoundException {
         teacherName = name;
@@ -21,7 +22,7 @@ public class Teacher {
 
     @Override
     public String toString() {
-        return "INSERT INTO Teachers (teacherName, departmentID) VALUES ('" + getTeacherName() + "', '" + getDepartmentID() + "');";
+        return "INSERT INTO Teachers (teacherName, departmentID) VALUES ('" + getTeacherName() + "', " + getDepartmentID() + ");";
     }
 
     public static ArrayList<Teacher> getTeachers() throws FileNotFoundException {
@@ -60,7 +61,16 @@ public class Teacher {
     public void removePeriods(int x){
         avaliablePeriods.remove(avaliablePeriods.indexOf(x));
     }
+
     public ArrayList<Integer> getAvaliablePeriods() {
         return avaliablePeriods;
+    }
+
+    public void addOffering (Offering offering) {
+        teachersOfferings.add(offering);
+    }
+
+    public ArrayList<Offering> getTeachersOfferings() {
+        return teachersOfferings;
     }
 }
