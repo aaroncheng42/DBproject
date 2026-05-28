@@ -25,7 +25,7 @@ public class StudentPopulation2 {
        }
     }
     public static void main(String[] args) {
-       //to test out the script to see if it works
+       //to test out the script to see if ts code works
         studentsPopulatingScript();
     }
 }
