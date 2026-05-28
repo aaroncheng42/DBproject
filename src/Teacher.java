@@ -21,7 +21,7 @@ public class Teacher {
 
     @Override
     public String toString() {
-        return "INSERT INTO Teachers (teacherName, departmentID) VALUES ('" + getTeacherName() + "', '" + getDepartmentID() + "');";
+        return "INSERT INTO Teachers (teacherName, departmentID) VALUES ('" + getTeacherName() + "', " + getDepartmentID() + ");";
     }
 
     public static ArrayList<Teacher> getTeachers() throws FileNotFoundException {
