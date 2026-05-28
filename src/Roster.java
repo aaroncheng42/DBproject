@@ -2,9 +2,9 @@ public class Roster {
     private int rosterID;
     private Roster roster;
     private int[] studentID;
-    private Students[] students;
+    private Student[] students;
 
-    public Roster(Roster roster, Students[] students) {
+    public Roster(Roster roster, Student[] students) {
         this.rosterID = rosterID;
         this.roster = roster;
         this.students = students;
