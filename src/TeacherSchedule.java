@@ -2,19 +2,17 @@ import java.util.ArrayList;
 
 
 public class TeacherSchedule {
-    private int[] offeringID;
-    private Offering[] offering;
+    private Offering offering;
     private int teacherID;
-    private Teacher teachers;
-    public static ArrayList<Teacher> allTeachers = new ArrayList<>();
+    private int offeringID;
+    private Teacher teacher;
+    private static int tempTeacherID;
+    private static int tempOfferingID;
 
-
-    public TeacherSchedule (Teacher teacher, Offering[] offering) {
-        offeringID = new int[offering.length];
-        for (int offerIndex = 0; offerIndex < offering.length; offerIndex++) {
-            offeringID[offerIndex] = offering[offerIndex].getOfferingID();
-        }
-        this.teachers = teacher;
+    public TeacherSchedule (Teacher teacher, Offering offering) {
+        this.offering = offering;
+        offeringID = offering.getOfferingID();
+        this.teacher = teacher;
         teacherID = teacher.getTeacherID();
     }
 
@@ -23,21 +21,24 @@ public class TeacherSchedule {
         return teacherID;
     }
 
+    @Override
+    public String toString() {
+        return "INSERT INTO TeacherSchedule (TeacherID, OfferingID) VALUES (" + teacherID + ", " + tempOfferingID + ");";
+    }
 
-    public int[] getOfferingID() {
+    // TeacherID | Offering
+    public int getOfferingID() {
         return offeringID;
     }
 
-
-    public String populationScript() {
-        String finalReturn = "";
-        for (Teacher teacher : allTeachers) {
-            int teacherID = teacher.getTeacherID();
-            for (Offering offering1 : teacher.getTeachersOfferings()) {
-                int offeringID = offering1.getOfferingID();
-                finalReturn += "INSERT INTO TeacherSchedule (TeacherID, OfferingID) VALUES (" + teacherID + ", " + offeringID + ");\n";
+    public static void printTeacherSchedule () {
+        for (int i = 0; i < Teacher.teachers.size(); i++) {
+            for (Offering offering1 : Teacher.teachers.get(i).getTeachersOfferings()) {
+                tempOfferingID = offering1.getOfferingID();
+                System.out.println(Teacher.teachers.get(i).toString());
             }
         }
-        return finalReturn;
     }
 }
+
+// in  allteachers make dupes of the same teacher with their different offerings and use the tostring method on that
