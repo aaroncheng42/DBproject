@@ -34,7 +34,7 @@ public class Offering {
         for(Student s : this.students){
             inital += "INSERT INTO Rosters (offeringID, studentsID) VALUES ("+offeringID +", "+ s.getStudentID() +")\n";
         }
-        inital += "INSERT INTO Offering(period, roomID, courseID, teacherID) VALUES ("+period +", "+ room.getRoomID() +", "+ course.getCourseID() +", "+ teacher.getTeacherID()+")\n";
+        inital += "INSERT INTO Offering (period, roomID, courseID, teacherID) VALUES ("+period +", "+ room.getRoomID() +", "+ course.getCourseID() +", "+ teacher.getTeacherID()+")\n";
         return inital;
     }
 
