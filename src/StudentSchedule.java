@@ -1,3 +1,8 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class StudentSchedule {
     private Offering[] offering;
     private int[] offeringID;
@@ -11,9 +16,26 @@ public class StudentSchedule {
         }
         this.student = student;
         studentID = student.getStudentID();
+
+    }
+
+    public static ArrayList<Student> getStudentSchedule() throws FileNotFoundException {
+        ArrayList<Student> studentSchedule = new ArrayList<>();
+
+
+        return studentSchedule;
+    }
+
+    public int getStudentID() {
+        return studentID;
     }
 
     public int[] getOfferingID() {
         return offeringID;
+    }
+
+    @Override
+    public String toString() {
+        return "INSERT INTO StudentsSchedule (studentID, offeringID) VALUES ('" + getStudentID() + "', " + getOfferingID() + "');";
     }
 }

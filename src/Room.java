@@ -17,6 +17,10 @@ public class Room{
         return "INSERT INTO Rooms (room) VALUES ('" + getRoomName() + "');";
     }
 
+    public int getRoomID() {
+        return roomID;
+    }
+
     public static ArrayList<Room> getRooms() throws FileNotFoundException {
         ArrayList<Room> rooms = new ArrayList<>();
         Scanner scanner = new Scanner(new File("src/files/rooms.txt"));

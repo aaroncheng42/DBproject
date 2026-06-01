@@ -44,6 +44,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return "INSERT INTO Students (studentName) VALUES ('" + getStudentName() + "');";
+        return "INSERT INTO Students (studentName, studentID) VALUES ('" + getStudentName() + "', " + getStudentID() + ");";
     }
 }

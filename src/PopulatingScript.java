@@ -11,5 +11,6 @@ public class PopulatingScript {
         Assignment.printAssignments();
         Teacher.printTeachers();
         Student.printStudents();
+        Offering.printOffering();
     }
 }
