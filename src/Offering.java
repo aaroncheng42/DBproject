@@ -71,9 +71,11 @@ public class Offering {
             }
             Collections.shuffle(assignments);
             ArrayList<Assignment> selectedAssignments = new ArrayList<>(assignments.subList(0, (int)(Math.random()*80+40)));
+            Collections.shuffle(students);
+            ArrayList<Student> selectedStudents = new ArrayList<>(students.subList(0, (int)(Math.random()*5+30)));
             Course selectedCourse = courses.get((int)(Math.random()*courses.size()));
             Room selectedRoom = rooms.get((int)(Math.random()*rooms.size()));
-            offers.add(new Offering(period, selectedAssignments, selectedCourse, selectedTeacher, selectedRoom, students));
+            offers.add(new Offering(period, selectedAssignments, selectedCourse, selectedTeacher, selectedRoom, selectedStudents));
         }
         return offers;
 
