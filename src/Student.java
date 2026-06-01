@@ -7,10 +7,14 @@ public class Student {
     private String studentName = "";
     private int studentID;
     static int counter = 0;
+    private ArrayList<Integer> avaliablePeriods = new ArrayList<>();
 
     public Student(String name) {
         studentName = name;
         studentID = ++counter;
+        for(int i = 1; i <= 10; i++){
+            avaliablePeriods.add(i);
+        }
     }
 
     public static void printStudents() throws FileNotFoundException {
@@ -36,6 +40,10 @@ public class Student {
 
     public int getStudentID() {
         return studentID;
+    }
+
+    public ArrayList<Integer> getAvaliablePeriods() {
+        return avaliablePeriods;
     }
 
     public String getStudentName() {

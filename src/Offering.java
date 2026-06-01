@@ -63,7 +63,7 @@ public class Offering {
         ArrayList<Course> courses = Course.getCourses();
         ArrayList<Student> students = Student.getStudents();
 
-        while(!teachers.isEmpty()){
+        while(!teachers.isEmpty() &&!students.isEmpty()){
             Teacher selectedTeacher =  teachers.get((int)(teachers.size()*Math.random()));
             int period = selectedTeacher.getAvaliablePeriods().get((int)(Math.random()*selectedTeacher.getAvaliablePeriods().size()));
             selectedTeacher.getAvaliablePeriods().remove(Integer.valueOf(period));
@@ -72,8 +72,15 @@ public class Offering {
             }
             Collections.shuffle(assignments);
             ArrayList<Assignment> selectedAssignments = new ArrayList<>(assignments.subList(0, (int)(Math.random()*80+40)));
-            Collections.shuffle(students);
-            ArrayList<Student> selectedStudents = new ArrayList<>(students.subList(0, (int)(Math.random()*5+30)));
+            int numStuSelected = 0;
+            ArrayList<Student> selectedStudents = new ArrayList<>();
+            while(numStuSelected < 32 || students.isEmpty()){
+                Student s = students.get((int)(Math.random()*students.size()));
+                if(s.getAvaliablePeriods().contains(period)){
+                    selectedStudents.add(s);
+                    numStuSelected++;
+                }
+            }
             Course selectedCourse = courses.get((int)(Math.random()*courses.size()));
             Room selectedRoom = rooms.get((int)(Math.random()*rooms.size()));
             offers.add(new Offering(period, selectedAssignments, selectedCourse, selectedTeacher, selectedRoom, selectedStudents));

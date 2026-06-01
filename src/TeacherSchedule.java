@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 
-public class TeacherSchedule {
+/* public class TeacherSchedule {
     private Offering offering;
     private int teacherID;
     private int offeringID;
@@ -40,5 +40,5 @@ public class TeacherSchedule {
         }
     }
 }
-
+*/
 // in  allteachers make dupes of the same teacher with their different offerings and use the tostring method on that
