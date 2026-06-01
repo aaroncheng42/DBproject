@@ -5,11 +5,12 @@ import java.util.Scanner;
 
 public class Teacher {
     private String teacherName = "";
-    private int teacherID ;
+    private int teacherID;
     private static int counter = 0;
+    public static ArrayList<Teacher> teachers;
     private int departmentID;
     private ArrayList<Integer> avaliablePeriods = new ArrayList<>();
-    private ArrayList<Offering> teachersOfferings = new ArrayList<>();
+    public ArrayList<Offering> teachersOfferings = new ArrayList<>();
 
     public Teacher(String name) throws FileNotFoundException {
         teacherName = name;
@@ -26,14 +27,12 @@ public class Teacher {
     }
 
     public static ArrayList<Teacher> getTeachers() throws FileNotFoundException {
-        ArrayList<Teacher> teachers = new ArrayList<>();
         Scanner scanner = new Scanner(new File("src/files/staff.txt"));
 
         while (scanner.hasNextLine()) {
             String name = scanner.nextLine();
             teachers.add(new Teacher(name));
         }
-
         scanner.close();
         return teachers;
     }
