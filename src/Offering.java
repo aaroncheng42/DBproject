@@ -81,8 +81,8 @@ public class Offering {
                 }
             }
             Course selectedCourse = courses.get((int)(Math.random()*courses.size()));
-            courseCounter++;
-            if (courseCounter == (int) (Math.random()*5) + 1) {
+            selectedCourse.updateCourseCounter();
+            if (selectedCourse.getCourseCounter() == (int) (Math.random()*5) + 1) {
                 courses.remove(selectedCourse);
             }
             Room selectedRoom = rooms.get((int)(Math.random()*rooms.size()));

@@ -9,6 +9,7 @@ public class Course {
     private String courseName;
     private String courseType;
     private static int count = 0;
+    private int courseCounter = 0;
 
     public Course(String name, String type) {
         courseID = ++count;
@@ -56,5 +57,13 @@ public class Course {
 
     public String getCourseType() {
         return courseType;
+    }
+
+    public int getCourseCounter() {
+        return courseCounter;
+    }
+
+    public void updateCourseCounter() {
+        courseCounter++;
     }
 }
