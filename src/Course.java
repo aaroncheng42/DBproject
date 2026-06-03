@@ -1,6 +1,5 @@
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -9,13 +8,13 @@ public class Course {
     private String courseName;
     private String courseType;
     private static int count = 0;
-    private int courseCounter;
+    private int timesOffered;
 
     public Course(String name, String type) {
         courseID = ++count;
         courseName = name;
         courseType = type;
-        courseCounter = 0;
+        timesOffered = 0;
     }
 
     @Override
@@ -60,11 +59,11 @@ public class Course {
         return courseType;
     }
 
-    public int getCourseCounter() {
-        return courseCounter;
+    public int getTimesOffered() {
+        return timesOffered;
     }
 
-    public void updateCourseCounter() {
-        courseCounter++;
+    public void updateTimesOffered() {
+        timesOffered++;
     }
 }
