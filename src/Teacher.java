@@ -25,6 +25,7 @@ public class Teacher {
     }
 
     public static ArrayList<Teacher> getTeachers() throws FileNotFoundException {
+        counter = 0;
         ArrayList<Teacher> teachers = new ArrayList<>();
         Scanner scanner = new Scanner(new File("src/files/staff.txt"));
 

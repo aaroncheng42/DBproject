@@ -27,16 +27,16 @@ public class Offering {
 
     @Override
     public String toString() {
-        String inital = "";
+        String initial = "";
         for(Assignment a : this.assignments){
-            inital += "INSERT INTO OfferingToAssignments (offeringID, assignmentID) VALUES ("+offeringID +", "+ a.getAssignmentID() +")\n";
+            initial += "INSERT INTO OfferingToAssignments (offeringID, assignmentID) VALUES ("+offeringID +", "+ a.getAssignmentID() +")\n";
         }
         for(Student s : this.students){
-            inital += "INSERT INTO Rosters (offeringID, studentsID) VALUES ("+offeringID +", "+ s.getStudentID() +")\n";
+            initial += "INSERT INTO Rosters (offeringID, studentsID) VALUES ("+offeringID +", "+ s.getStudentID() +")\n";
         }
-        inital += "INSERT INTO TeacherSchedule  (offeringID, teacherID) VALUES ("+offeringID +", "+ teacher.getTeacherID() +")\n";
-        inital += "INSERT INTO Offering (period, roomID, courseID, teacherID) VALUES ("+period +", "+ room.getRoomID() +", "+ course.getCourseID() +", "+ teacher.getTeacherID()+")\n";
-        return inital;
+        initial += "INSERT INTO TeacherSchedule  (offeringID, teacherID) VALUES ("+offeringID +", "+ teacher.getTeacherID() +")\n";
+        initial += "INSERT INTO Offering (period, roomID, courseID, teacherID) VALUES ("+period +", "+ room.getRoomID() +", "+ course.getCourseID() +", "+ teacher.getTeacherID()+")\n";
+        return initial;
     }
 
     public int getOfferingID() {
