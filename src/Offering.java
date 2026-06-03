@@ -56,6 +56,7 @@ public class Offering {
     }
 
     public static ArrayList<Offering> getOfferings() throws FileNotFoundException {
+        counter = 0;
         ArrayList<Offering> offers = new ArrayList<>();
         ArrayList<Teacher> teachers = Teacher.getTeachers();
         ArrayList<Assignment> assignments = Assignment.getAssignments();

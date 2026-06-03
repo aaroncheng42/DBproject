@@ -30,6 +30,7 @@ public class Course {
     }
 
     public static ArrayList<Course> getCourses() throws FileNotFoundException {
+        count = 0;
         ArrayList<Course> courses = new ArrayList<>();
         Scanner scanner = new Scanner(new File("src/files/courses.txt"));
 

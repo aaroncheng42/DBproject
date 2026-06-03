@@ -20,6 +20,7 @@ public class Assignment {
     }
 
     public static ArrayList<Assignment> getAssignments() {
+        counter = 0;
         ArrayList<Assignment> assignments = new ArrayList<>();
         File f = new File("src/files/assignments.txt");
         try {

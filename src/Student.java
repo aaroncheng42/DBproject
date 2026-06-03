@@ -26,6 +26,7 @@ public class Student {
     }
 
     public static ArrayList<Student> getStudents() throws FileNotFoundException {
+        counter = 0;
         ArrayList<Student> students = new ArrayList<>();
         Scanner scanner = new Scanner(new File("src/files/studentnames.txt"));
 

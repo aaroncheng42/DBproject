@@ -22,6 +22,7 @@ public class Room{
     }
 
     public static ArrayList<Room> getRooms() throws FileNotFoundException {
+        counter = 0;
         ArrayList<Room> rooms = new ArrayList<>();
         Scanner scanner = new Scanner(new File("src/files/rooms.txt"));
 
