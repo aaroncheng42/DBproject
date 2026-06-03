@@ -17,11 +17,9 @@ public class Offering {
         this.period = period;
         this.assignments = assignments;
         this.room = room;
-        int count = 0;
         this.students = students;
         this.teacher = teacher;
-        offeringID = counter;
-        counter++;
+        offeringID = ++counter;
         this.course = course;
     }
 
@@ -43,7 +41,6 @@ public class Offering {
         return offeringID;
     }
 
-
     public int getPeriod() {
         return period;
     }
@@ -57,6 +54,7 @@ public class Offering {
 
     public static ArrayList<Offering> getOfferings() throws FileNotFoundException {
         counter = 0;
+        int courseCounter = 0;
         ArrayList<Offering> offers = new ArrayList<>();
         ArrayList<Teacher> teachers = Teacher.getTeachers();
         ArrayList<Assignment> assignments = Assignment.getAssignments();
@@ -83,14 +81,14 @@ public class Offering {
                 }
             }
             Course selectedCourse = courses.get((int)(Math.random()*courses.size()));
+            courseCounter++;
+            if (courseCounter == (int) (Math.random()*5) + 1) {
+                courses.remove(selectedCourse);
+            }
             Room selectedRoom = rooms.get((int)(Math.random()*rooms.size()));
             offers.add(new Offering(period, selectedAssignments, selectedCourse, selectedTeacher, selectedRoom, selectedStudents));
         }
         return offers;
-
-
     }
-
 }
-
 
