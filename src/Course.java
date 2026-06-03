@@ -9,12 +9,13 @@ public class Course {
     private String courseName;
     private String courseType;
     private static int count = 0;
-    private int courseCounter = 0;
+    private int courseCounter;
 
     public Course(String name, String type) {
         courseID = ++count;
         courseName = name;
         courseType = type;
+        courseCounter = 0;
     }
 
     @Override
