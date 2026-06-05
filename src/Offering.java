@@ -26,14 +26,17 @@ public class Offering {
     @Override
     public String toString() {
         String initial = "";
-        for(Assignment a : this.assignments){
-            initial += "INSERT INTO OfferingToAssignments (offeringID, assignmentID) VALUES ("+offeringID +", "+ a.getAssignmentID() +")\n";
+        for (Assignment a : this.assignments) {
+            initial += "INSERT INTO OfferingToAssignments (offeringID, assignmentID) VALUES (" + offeringID + ", "+ a.getAssignmentID() +");\n";
         }
-        for(Student s : this.students){
-            initial += "INSERT INTO Rosters (offeringID, studentsID) VALUES ("+offeringID +", "+ s.getStudentID() +")\n";
+        for (Student s : this.students) {
+            for (Assignment a : this.assignments) {
+                initial += "INSERT INTO Grades (studentID, offeringID, assignmentID, grade) VALUES (" + s.getStudentID() + ", " + offeringID + ", " + a.getAssignmentID() + ", " + (int) (Math.random() * (100 - 75 + 1)) + 75 + ");\n";
+            }
+            initial += "INSERT INTO Rosters (offeringID, studentsID) VALUES (" + offeringID + ", " + s.getStudentID() + ");\n";
         }
-        initial += "INSERT INTO TeacherSchedule  (offeringID, teacherID) VALUES ("+offeringID +", "+ teacher.getTeacherID() +")\n";
-        initial += "INSERT INTO Offering (period, roomID, courseID, teacherID) VALUES ("+period +", "+ room.getRoomID() +", "+ course.getCourseID() +", "+ teacher.getTeacherID()+")\n";
+        initial += "INSERT INTO TeacherSchedule  (offeringID, teacherID) VALUES (" + offeringID + ", "+ teacher.getTeacherID() +")\n";
+        initial += "INSERT INTO Offering (period, roomID, courseID, teacherID) VALUES ("+ period + ", " + room.getRoomID() + ", " + course.getCourseID() + ", " + teacher.getTeacherID()+ ");\n";
         return initial;
     }
 
@@ -54,8 +57,7 @@ public class Offering {
 
     public static ArrayList<Offering> getOfferings() throws FileNotFoundException {
         counter = 0;
-        int courseCounter = 0;
-        ArrayList<Offering> offers = new ArrayList<>();
+        ArrayList<Offering> offerings = new ArrayList<>();
         ArrayList<Teacher> teachers = Teacher.getTeachers();
         ArrayList<Assignment> assignments = Assignment.getAssignments();
         ArrayList<Room> rooms = Room.getRooms();
@@ -86,9 +88,9 @@ public class Offering {
                 courses.remove(selectedCourse);
             }
             Room selectedRoom = rooms.get((int)(Math.random()*rooms.size()));
-            offers.add(new Offering(period, selectedAssignments, selectedCourse, selectedTeacher, selectedRoom, selectedStudents));
+            offerings.add(new Offering(period, selectedAssignments, selectedCourse, selectedTeacher, selectedRoom, selectedStudents));
         }
-        return offers;
+        return offerings;
     }
 }
 

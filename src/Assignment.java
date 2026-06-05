@@ -16,7 +16,7 @@ public class Assignment {
 
     @Override
     public String toString() {
-        return "INSERT INTO Assignments (assignmentName, isMajor) VALUES ('" + getAssignmentName() + "', " + getAssignmentType() + ");";
+        return "INSERT INTO Assignments (assignmentName, isMajor) VALUES ('" + getAssignmentName() + "', " + getAssignmentType() + ");\n";
     }
 
     public static ArrayList<Assignment> getAssignments() {

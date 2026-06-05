@@ -53,6 +53,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return "INSERT INTO Students (studentName, studentID) VALUES ('" + getStudentName() + "', " + getStudentID() + ");";
+        return "INSERT INTO Students (studentName, studentID) VALUES ('" + getStudentName() + "', " + getStudentID() + ");\n";
     }
 }

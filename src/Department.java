@@ -15,7 +15,7 @@ public class Department {
 
     @Override
     public String toString() {
-        return "INSERT INTO Departments (department) VALUES ('" + departmentName + "');";
+        return "INSERT INTO Departments (department) VALUES ('" + departmentName + "');\n";
     }
 
     public static ArrayList<Department> getDepartments() throws FileNotFoundException {

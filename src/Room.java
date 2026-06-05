@@ -14,7 +14,7 @@ public class Room{
     }
 
     public String toString() {
-        return "INSERT INTO Rooms (room) VALUES ('" + getRoomName() + "');";
+        return "INSERT INTO Rooms (room) VALUES ('" + getRoomName() + "');\n";
     }
 
     public int getRoomID() {
