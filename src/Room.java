@@ -14,7 +14,7 @@ public class Room{
     }
 
     public String toString() {
-        return "INSERT INTO Rooms (room) VALUES ('" + getRoomName() + "');\n";
+        return "INSERT INTO Rooms (RoomName) VALUES ('" + getRoomName() + "');\n";
     }
 
     public int getRoomID() {
@@ -24,7 +24,7 @@ public class Room{
     public static ArrayList<Room> getRooms() throws FileNotFoundException {
         counter = 0;
         ArrayList<Room> rooms = new ArrayList<>();
-        Scanner scanner = new Scanner(new File("src/files/rooms.txt"));
+        Scanner scanner = new Scanner(new File("/home/keruic3/Projects/database/src/files/rooms.txt"));
 
         while (scanner.hasNextLine()) {
             String roomName = scanner.nextLine();

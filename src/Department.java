@@ -21,7 +21,7 @@ public class Department {
     public static ArrayList<Department> getDepartments() throws FileNotFoundException {
         counter = 0;
         ArrayList<Department> departments = new ArrayList<>();
-        Scanner scanner = new Scanner(new File("src/files/departments.txt"));
+        Scanner scanner = new Scanner(new File("/home/keruic3/Projects/database/src/files/departments.txt"));
 
         while (scanner.hasNextLine()) {
             String dpt = scanner.nextLine();

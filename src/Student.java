@@ -28,7 +28,7 @@ public class Student {
     public static ArrayList<Student> getStudents() throws FileNotFoundException {
         counter = 0;
         ArrayList<Student> students = new ArrayList<>();
-        Scanner scanner = new Scanner(new File("src/files/studentnames.txt"));
+        Scanner scanner = new Scanner(new File("/home/keruic3/Projects/database/src/files/studentnames.txt"));
 
         while (scanner.hasNextLine()) {
             String name = scanner.nextLine();
@@ -53,6 +53,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return "INSERT INTO Students (studentName, studentID) VALUES ('" + getStudentName() + "', " + getStudentID() + ");\n";
+        return "INSERT INTO Students (StudentName, StudentID) VALUES ('" + getStudentName() + "', " + getStudentID() + ");\n";
     }
 }

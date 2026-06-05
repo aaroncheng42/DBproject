@@ -16,13 +16,13 @@ public class Assignment {
 
     @Override
     public String toString() {
-        return "INSERT INTO Assignments (assignmentName, isMajor) VALUES ('" + getAssignmentName() + "', " + getAssignmentType() + ");\n";
+        return "INSERT INTO Assignments (AssignmentName, isMajor) VALUES ('" + getAssignmentName() + "', " + getAssignmentType() + ");\n";
     }
 
     public static ArrayList<Assignment> getAssignments() {
         counter = 0;
         ArrayList<Assignment> assignments = new ArrayList<>();
-        File f = new File("src/files/assignments.txt");
+        File f = new File("/home/keruic3/Projects/database/src/files/assignments.txt");
         try {
             Scanner sc = new Scanner(f);
             while (sc.hasNext()) {

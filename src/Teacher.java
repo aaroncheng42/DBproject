@@ -21,13 +21,13 @@ public class Teacher {
 
     @Override
     public String toString() {
-        return "INSERT INTO Teachers (teacherName, departmentID) VALUES ('" + getTeacherName() + "', '" + getDepartmentID() + "');\n";
+        return "INSERT INTO Teachers (TeacherName, DepartmentID) VALUES ('" + getTeacherName() + "', '" + getDepartmentID() + "');\n";
     }
 
     public static ArrayList<Teacher> getTeachers() throws FileNotFoundException {
         counter = 0;
         ArrayList<Teacher> teachers = new ArrayList<>();
-        Scanner scanner = new Scanner(new File("src/files/staff.txt"));
+        Scanner scanner = new Scanner(new File("/home/keruic3/Projects/database/src/files/staff.txt"));
 
         while (scanner.hasNextLine()) {
             String name = scanner.nextLine();

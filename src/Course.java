@@ -19,7 +19,7 @@ public class Course {
 
     @Override
     public String toString() {
-        return "INSERT INTO Courses (courseName, type) VALUES ('" + getCourseName() + "', '" + getCourseType() + "');\n";
+        return "INSERT INTO Courses (CourseName, Type) VALUES ('" + getCourseName() + "', '" + getCourseType() + "');\n";
     }
 
     public static void printCourses() throws FileNotFoundException {
@@ -33,7 +33,7 @@ public class Course {
     public static ArrayList<Course> getCourses() throws FileNotFoundException {
         count = 0;
         ArrayList<Course> courses = new ArrayList<>();
-        Scanner scanner = new Scanner(new File("src/files/courses.txt"));
+        Scanner scanner = new Scanner(new File("/home/keruic3/Projects/database/src/files/courses.txt"));
 
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();

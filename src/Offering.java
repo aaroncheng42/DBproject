@@ -27,16 +27,16 @@ public class Offering {
     public String toString() {
         String initial = "";
         for (Assignment a : this.assignments) {
-            initial += "INSERT INTO OfferingToAssignments (offeringID, assignmentID) VALUES (" + offeringID + ", "+ a.getAssignmentID() +");\n";
+            initial += "INSERT INTO OfferingToAssignments (OfferingID, AssignmentID) VALUES (" + offeringID + ", "+ a.getAssignmentID() +");\n";
         }
         for (Student s : this.students) {
             for (Assignment a : this.assignments) {
-                initial += "INSERT INTO Grades (studentID, offeringID, assignmentID, grade) VALUES (" + s.getStudentID() + ", " + offeringID + ", " + a.getAssignmentID() + ", " + (int) (Math.random() * (100 - 75 + 1)) + 75 + ");\n";
+                initial += "INSERT INTO Grades (StudentID, OfferingID, AssignmentID, Grade) VALUES (" + s.getStudentID() + ", " + offeringID + ", " + a.getAssignmentID() + ", " + ((int) (Math.random() * (100 - 75 + 1)) + 75) + ");\n";
             }
-            initial += "INSERT INTO Rosters (offeringID, studentsID) VALUES (" + offeringID + ", " + s.getStudentID() + ");\n";
+            initial += "INSERT INTO Rosters (OfferingID, StudentID) VALUES (" + offeringID + ", " + s.getStudentID() + ");\n";
         }
-        initial += "INSERT INTO TeacherSchedule  (offeringID, teacherID) VALUES (" + offeringID + ", "+ teacher.getTeacherID() +")\n";
-        initial += "INSERT INTO Offering (period, roomID, courseID, teacherID) VALUES ("+ period + ", " + room.getRoomID() + ", " + course.getCourseID() + ", " + teacher.getTeacherID()+ ");\n";
+        initial += "INSERT INTO TeacherSchedule  (OfferingID, TeacherID) VALUES (" + offeringID + ", "+ teacher.getTeacherID() +")\n";
+        initial += "INSERT INTO Offering (Period, RoomID, CourseID, TeacherID) VALUES ("+ period + ", " + room.getRoomID() + ", " + course.getCourseID() + ", " + teacher.getTeacherID()+ ");\n";
         return initial;
     }
 
@@ -91,6 +91,7 @@ public class Offering {
                     break;
                 }
             }
+
             int numStuSelected = 0;
             ArrayList<Student> selectedStudents = new ArrayList<>();
             while(numStuSelected < 32 || students.isEmpty()){
