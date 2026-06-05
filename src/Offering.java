@@ -72,7 +72,25 @@ public class Offering {
                 teachers.remove(selectedTeacher);
             }
             Collections.shuffle(assignments);
-            ArrayList<Assignment> selectedAssignments = new ArrayList<>(assignments.subList(0, (int)(Math.random()*80+40)));
+            ArrayList<Assignment> selectedAssignments = new ArrayList<>();
+            int minorCounter = 0;
+            int majorCounter = 0;
+            for (Assignment a : assignments) {
+                if (!(a.getAssignmentType())) {
+                    if (minorCounter < 12) {
+                        selectedAssignments.add(a);
+                    }
+                    minorCounter++;
+                } else {
+                    if (majorCounter < 3) {
+                        selectedAssignments.add(a);
+                    }
+                    majorCounter++;
+                }
+                if (minorCounter == 12 && majorCounter == 3) {
+                    break;
+                }
+            }
             int numStuSelected = 0;
             ArrayList<Student> selectedStudents = new ArrayList<>();
             while(numStuSelected < 32 || students.isEmpty()){
